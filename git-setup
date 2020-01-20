@@ -10,10 +10,13 @@
 
 Setting up Git/Github account, but first what is Git and Github?
 
+*pre-requitsite go to https://git-scm.com/ and download git for your computer if you don't have it"
+
 1.) Go to github.com and sign up for a git account
 	- You will need an email account *suggested you use one that you'll remember*
 2.) create a repository
 	- remember the name as this will be used often
+	-* example of a repository link  https://github.com/example.git* // 
 
 If you want to use be able to use Git/Github from the command line, then you will need to follow the below steps (I only advise to do these steps if you have a linux distribution or similar OS **note: can be done on a windows os, but personally preferable to use on a linux distribution** )
 
@@ -25,14 +28,16 @@ If you want to use be able to use Git/Github from the command line, then you wil
 	- git config --global user.email // to make sure email address is added
 	- git config --global --list // to view all your current information
 3.) Initializing a local directoty for git
-	- in terminal window type " git init" // this will allow for version controll by tracking the directory
+	- in terminal window navigate to directory you'll be working out of and type " git init" // this will allow for version controll by tracking the directory
+
 4.)cloning a repository 
+	
 	- git clone https://gitlab.com/gitlab-org/gitlab.git //*example of what cloning would look like https*
 		or 
 	- git clone git@gitlab.com:gitlab-org/gitlab.git //*example of what cloning would look like via ssh*
 
 5.) Pulling from a repository to local directory
-	- first add a remote repository, but first cd into the "../.git" directory 
+	- first add a remote repository, but first you must clone the repository
 	- type "git remote add <source-name> <repository-path>" //you create source name
 	- to view added repositories type "git remote -v"
 	- git pull <REMOTE> <name-of-branch>
