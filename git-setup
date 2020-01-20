@@ -54,6 +54,20 @@ If you want to use be able to use Git/Github from the command line, then you wil
 8.) pushing files,code and etc to git
 	- type " git push <remote> <name-of-branch>" // example git push origin master
 
+9.) editng and updating a file from local directory
+	- type "git add <file-name or folder-name>"
+	- type "git commit -m " fill in with comments about the update"
+	- type " git push <remote> <name-of-branch>
+
+10.) making a branch
+	- What is a branch?, what is it used for?
+	- type "git checkout -b <name-of-branch>
+	- type "git add <file-name or folder-name>"
+	- type "git commit -m " fill in with comments about the update"
+	- type " git push <remote> <name-of-branch>
+
+	
+
 
 
 
