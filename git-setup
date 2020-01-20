@@ -1,0 +1,56 @@
+\*############################################################################################################*/
+\*############################################################################################################*/
+\*#########GGGGGGGG###########################################################################################*/
+\*#########GGG################################################################################################*/\*#########GGG################################################################################################*/\*#########GGG##GG###########################################################################################*/\*#########GGG###GG###########################################################################################*/\*#########GGGGGGGG###########################################################################################*/\*############################################################################################################*/\*############################################################################################################*/\*############################################################################################################*/
+
+\\ Quick setup guide for github. COVERS JUST SETUP, MORE INFORMATION ABOUT USING GIT/GITHUB CAN BE FOUND AT Github.com, and also by googling
+
+
+
+
+Setting up Git/Github account, but first what is Git and Github?
+
+1.) Go to github.com and sign up for a git account
+	- You will need an email account *suggested you use one that you'll remember*
+2.) create a repository
+	- remember the name as this will be used often
+
+If you want to use be able to use Git/Github from the command line, then you will need to follow the below steps (I only advise to do these steps if you have a linux distribution or similar OS **note: can be done on a windows os, but personally preferable to use on a linux distribution** )
+
+2.) open up an terminal and input the following commands
+	- git --version //checks if Git is installed
+	- git config --global user.name "your_username"
+	- git config --global user.name // to make sure username is added
+	- git config --global user.email "your email address"
+	- git config --global user.email // to make sure email address is added
+	- git config --global --list // to view all your current information
+3.) Initializing a local directoty for git
+	- in terminal window type " git init" // this will allow for version controll by tracking the directory
+4.)cloning a repository 
+	- git clone https://gitlab.com/gitlab-org/gitlab.git //*example of what cloning would look like https*
+		or 
+	- git clone git@gitlab.com:gitlab-org/gitlab.git //*example of what cloning would look like via ssh*
+
+5.) Pulling from a repository to local directory
+	- first add a remote repository, but first cd into the "../.git" directory 
+	- type "git remote add <source-name> <repository-path>" //you create source name
+	- to view added repositories type "git remote -v"
+	- git pull <REMOTE> <name-of-branch>
+
+6.) viewing status changes and differences made input
+	- git status
+	- git diff
+
+7.) Adding files and commiting them to github repository
+	- type "git add <file-name OR folder-name>"
+	- type "git commit -m "COMMENT TO DESCRIBE THE INTENTION OF THE COMMIT"
+	- to add all changes type " git add ." then followed by git commit command
+
+8.) pushing files,code and etc to git
+	- type " git push <remote> <name-of-branch>" // example git push origin master
+
+
+
+
+
+
